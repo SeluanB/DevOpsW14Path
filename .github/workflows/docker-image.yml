@@ -30,7 +30,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/devopspath:latest
-  deploy:
+  deployment:
     needs: build
     runs-on: ubuntu-latest
     steps:
